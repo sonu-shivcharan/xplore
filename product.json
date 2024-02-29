@@ -1,0 +1,22 @@
+{
+  "products": {
+    "items":[{
+      "id":1,
+      "name":"tshirt1",
+      "img":"url",
+      "price":1000
+    },
+      {
+        "id":2,
+        "name":"tshirt2",
+        "img":"url",
+        "price":1000
+      },
+      {
+        "id":3,
+        "name":"tshirt3",
+        "img":"url",
+        "price":1000
+      }]
+  }
+}
