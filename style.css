@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+}
+#navbar{
+    width:100vw;
+    height: 45px;
+    position: fixed;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#nav-list{
+    display: flex;
+    justify-content: center;
+}
+#nav-list .item{
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+#nav-list .item>a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(241, 241, 241);
+}
+#nav-list .item:hover{
+    border: 2px solid #fff;
+}
+#navbar .logo{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 46px;
+   /* -webkit-filter: invert(100%);*/
+}
