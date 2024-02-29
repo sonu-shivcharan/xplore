@@ -3,19 +3,25 @@
     "items":[{
       "id":1,
       "name":"tshirt1",
-      "img":"url",
+      "img": {
+        "url":"./logo.png"
+      },
       "price":1000
     },
       {
         "id":2,
         "name":"tshirt2",
-        "img":"url",
+        "img": {
+          "url":"./logo.png"
+        },
         "price":1000
       },
       {
         "id":3,
         "name":"tshirt3",
-        "img":"url",
+        "img": {
+          "url":"./logo.png"
+        },
         "price":1000
       }]
   }
