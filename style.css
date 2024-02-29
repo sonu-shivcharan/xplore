@@ -16,6 +16,7 @@
 #nav-list{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #nav-list .item{
     display: inline-block;
