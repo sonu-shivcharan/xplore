@@ -4,15 +4,15 @@
       "id":1,
       "name":"tshirt1",
       "img": {
-        "url":"./logo1.png"
+        "url":"./img/tshirt1.jpg"
       },
-      "price":1000
+      "price":999.00
     },
       {
         "id":2,
         "name":"tshirt2",
         "img": {
-          "url":"./logo1.png"
+          "url":"./img/tshirt2.jpg"
         },
         "price":1000
       },
@@ -20,9 +20,17 @@
         "id":3,
         "name":"tshirt3",
         "img": {
-          "url":"./logo1.png"
+          "url":"./img/tshirt3.jpg"
+        },
+        "price":1000
+      },{
+        "id":3,
+        "name":"tshirt3",
+        "img": {
+          "url":"./img/tshirt4.jpg"
         },
         "price":1000
       }]
+  
   }
 }
