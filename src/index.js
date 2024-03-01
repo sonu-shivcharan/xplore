@@ -1,6 +1,6 @@
 let products;
 (function(){
-  fetch("./product.json")
+  fetch("./src/product.json")
 .then((resp)=>resp.json())
 .then((data)=>{
   products = data.products.items;
