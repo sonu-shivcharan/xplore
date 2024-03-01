@@ -8,19 +8,24 @@
     width:100vw;
     height: 45px;
     position: fixed;
-    background-color: rgb(87, 87, 87);
+    background-color: transparent;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     z-index: 3;
 }
 #navbar .wrapper{
-  max-width:780px;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   padding: 0 1rem;
+  margin: auto;
+  position: relative;
 }
 #nav-list{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 #nav-list .item{
@@ -37,17 +42,34 @@
 #nav-list .item:hover{
     border: 2px solid #fff;
 }
-#navbar .logo{
+#navbar #name h1{
+    color: #fff;
     position: absolute;
-    left:0;
-    top:0;
     height: 46px;
 }
 section{
   min-height: 50vh;
 }
-.hero-vid{
-  width:100vw;
+#hero-section{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#hero-vid{
+  width: 100vw!important;
+  height: 100%;
+}
+#hero-section h1{
+  width:200px;
+  font-size: calc(20px + 2vw);
+  position: absolute;
+  top:30%;
+  margin-left: 2vw ;
+  color: #fff;
+  text-shadow: 0 0 20px #e2e0cf, 2px 2px 25px #fff;
 }
 #products-section h2{
   text-align:center;
