@@ -54,7 +54,6 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:;
 }
 
 #products-container .product{
@@ -64,7 +63,6 @@ section{
   border:1px solid black;
   padding: 10px;
   border-radius: 5px;
-  background-color: ;
 }
 .product .prod-img{
   width:100%;
