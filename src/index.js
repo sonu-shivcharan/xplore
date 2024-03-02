@@ -1,6 +1,9 @@
 
 let products;
 let modal;
+const navbar = document.getElementById("navbar");
+
+console.log(navbar, "navbar");
 (function(){
   fetch("./src/product.json")
 .then((resp)=>resp.json())
@@ -23,6 +26,7 @@ function renderProdItems(products){
     </div>`
     console.log(item);
   });
+  productsContainer.innerHTML+=`<button id="show-more-btn">Show More</button>`;
 }
 function openProduct(item){
   console.log(item);
@@ -47,5 +51,14 @@ function openProduct(item){
 function closeModal(e){
   if(e.target.id=="modal"){
     document.body.removeChild(modal);
+  }
+}
+
+
+window.onscroll = (()=>handleScroll());
+function handleScroll(){
+  let scrollTop = document.body.scrollTop;
+  if(document.body.scrollTop>150){
+    navbar.style.backgroundColor="black";
   }
 }

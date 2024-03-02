@@ -22,15 +22,51 @@
         "img": {
           "url":"./img/tshirt3.jpg"
         },
-        "price":1000
+        "price":899
       },{
-        "id":3,
-        "name":"tshirt3",
+        "id":4,
+        "name":"tshirt4",
         "img": {
           "url":"./img/tshirt4.jpg"
         },
-        "price":1000
-      }]
+        "price":1199
+      },{
+        "id":5,
+        "name":"tshirt5",
+        "img": {
+          "url":"./img/tshirt5.jpg"
+        },
+        "price":1199
+      },{
+        "id":6,
+        "name":"tshirt6",
+        "img": {
+          "url":"./img/tshirt6.jpg"
+        },
+        "price":999
+      },{
+        "id":7,
+        "name":"Limited Edition",
+        "img": {
+          "url":"./img/sunnysir.png"
+        },
+        "price":1799
+      },{
+        "id":8,
+        "name":" DPU Limited Editino ",
+        "img": {
+          "url":"./img/dpu.png"
+        },
+        "price":1799
+      },{
+        "id":7,
+        "name":"BCA WALA Limited Edition",
+        "img": {
+          "url":"./img/bcawala.png"
+        },
+        "price":1799
+      }
+    ]
   
   }
 }
