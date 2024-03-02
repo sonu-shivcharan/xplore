@@ -54,7 +54,7 @@ section{
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 70vh;
+  height: 90vh;
   overflow: hidden;
   position: relative;
 }
