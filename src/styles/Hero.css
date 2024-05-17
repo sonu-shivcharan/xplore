@@ -1,0 +1,10 @@
+#hero-section{
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    padding-top:3rem;
+}
+#hero-section #shop-now-btn{
+    width:100px;
+    padding: 0.7rem;
+}

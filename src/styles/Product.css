@@ -1,0 +1,30 @@
+#product-section{
+    min-height: 50vh;
+    text-align: center;
+    margin: 3rem 0;
+}
+.products-container{
+    max-width:900px;
+    margin: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.product-card{
+    width: 170px;
+    aspect-ratio: 9/12;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 0.3rem;
+    box-shadow: 0 2px 5px rgb(228, 228, 228);
+    transition: 0.2s;
+}
+.product-card img{
+    width: 100%;
+    aspect-ratio: 4/5;
+    border-radius: 3px;
+    background-color: antiquewhite;
+}
+.product-card:hover{
+    box-shadow: 0 2px 20px rgb(228, 228, 228);
+}
