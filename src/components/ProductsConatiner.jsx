@@ -1,26 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ProductCard from './ProductCard'
+import { ProductContext } from './ProductContext'
+
 import './../styles/Product.css'
+
 const ProductsConatiner = () => {
+const products = useContext(ProductContext);
   return (
     <div id='product-section' className=''>
       <h2>Featured products</h2>
       <div className='products-container flex justify-center'>
-        <div className='product-card'>
-          <img></img>
-          <h4>Product1</h4>
-        </div>
-        <div className='product-card'>
-        <img></img>
-          <h4>Product1</h4>
-        </div>
-        <div className='product-card'>
-        <img></img>
-          <h4>Product1</h4>
-        </div>
-
+      {
+        products.map((item)=><ProductCard item={item} key={item.name} />)
+      }
       </div>
+      <div>Explore More</div>
     </div>
   )
 }
 
-export default ProductsConatiner
+export default React.memo(ProductsConatiner);

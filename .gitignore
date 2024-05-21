@@ -1,12 +1,28 @@
-# Node.js
-node_modules/*
+# Dependency directories
+node_modules
 
-# Vite
+# Cache and build directories
+.cache/
+build/
 
+# Environment variables file (if you use one)
+.env
 
-# IDE
+# Editor files
 .vscode/
-.idea/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.suo
+*.ntvs*
 
-# OS-generated files
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# System files
 .DS_Store
+Thumbs.db
