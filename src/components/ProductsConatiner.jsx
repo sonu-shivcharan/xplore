@@ -5,7 +5,7 @@ import { ProductContext } from './ProductContext'
 import './../styles/Product.css'
 
 const ProductsConatiner = () => {
-const products = useContext(ProductContext);
+const {products} = useContext(ProductContext);
   return (
     <div id='product-section' className=''>
       <h2>Featured products</h2>

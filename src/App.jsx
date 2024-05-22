@@ -8,7 +8,7 @@ import { ProductContext } from "./components/ProductContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [products, setProducts] = useState([]);
-
+  const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
     fetch("/product.json")
       .then((res) => {
@@ -34,7 +34,7 @@ function App() {
           element={
             <>
               <HeroSection />
-              <ProductContext.Provider value={products}>
+              <ProductContext.Provider value={{products, cartItems,setCartItems}}>
                 <ProductsConatiner />
               </ProductContext.Provider>
             </>
@@ -44,7 +44,7 @@ function App() {
           path="/cart"
           element={
             <>
-              <Cart />
+              <Cart cartItems={cartItems} />
             </>
           }
         />

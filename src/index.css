@@ -43,10 +43,7 @@
 }
 
 
-#cart-section{
-  padding-top: 3.5rem;
-  min-height: 500px;
-}
+
 /**-------globaluse case clases----*/
 .flex{
   display:flex;
@@ -67,4 +64,10 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
 }

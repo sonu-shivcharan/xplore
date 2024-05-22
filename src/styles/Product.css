@@ -13,10 +13,11 @@
 .product-card{
     width: 200px;
     aspect-ratio: 9/12;
-    border: 1px solid rgb(34, 34, 34);
+    border: 1px solid #ebebeb;
     border-radius: 5px;
     transition: 0.2s;
     padding-bottom: 0.3rem ;
+    position: relative;
 }
 .product-card .img{
     width: 100%;
@@ -31,7 +32,40 @@
     font-size: 2rem;
     font-weight: bold;
     color:black;
+    position: relative;
 }
 .product-card:hover{
     box-shadow: 0 2px 20px rgb(228, 228, 228);
+    border: 1px solid rgb(169, 209, 247);
 }
+
+.product-card .dropdown{
+    max-width:150px;
+    width:100%;
+    position: absolute;
+    transform: translate(-50%, -10px);
+    background-color: #fff;
+    border:1px solid #e3e3e3;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    z-index:2;
+    text-align: left;
+    box-shadow: 0 0 5px #afafaf;
+    display: none;
+}
+.product-card .dropdown ul{
+    list-style-type:none;
+}
+.product-card .dropdown ul li{
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.product-card .dropdown ul li:hover{
+    background-color: #ecebeb;
+}
+.menu-icon-container:hover .dropdown {
+    display: block;
+  }
+  
+  
+  

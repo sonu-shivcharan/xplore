@@ -1,0 +1,27 @@
+#cart-section {
+  min-height: 500px;
+  background-color: #f1f1f1;
+  padding: 3.5rem 1rem;
+}
+#cart-section h3 {
+  text-align: center;
+  padding: 1rem;
+}
+#cart-section .items-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+#cart-section .cart-item-card img {
+  max-width: 150px;
+}
+#cart-section .quantity-input-container input {
+  width: 60px;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius:7px;
+  border: 1px solid #e3e3e3;
+}
