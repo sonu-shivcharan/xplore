@@ -12,7 +12,9 @@
   left:0;
   padding: 0.3rem;
   backdrop-filter: blur(5px);
-  color:white;
+  background-color: white;
+  color:#000;
+  border: 1px solid #cecece;
   z-index: 4;
 }
 #navbar .wrapper{
@@ -32,11 +34,19 @@
 #navbar .shopping-bag{
   font-size: 2rem;
   background-color: transparent;
+  color:#000;
   padding: 0.3rem;
   border: none;
 }
+#navbar .menu{
+  color:#000;
+}
 
 
+#cart-section{
+  padding-top: 3.5rem;
+  min-height: 500px;
+}
 /**-------globaluse case clases----*/
 .flex{
   display:flex;
@@ -46,6 +56,12 @@
 }
 .items-center{
   align-items: center;
+}
+.justify-space-around{
+  justify-content: space-around;
+}
+.justify-space-between{
+  justify-content: space-between;
 }
 .flex-perfect-center{
   display:flex;

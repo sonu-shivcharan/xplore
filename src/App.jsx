@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import ProductsConatiner from './components/ProductsConatiner'
-import  HeroSection  from './components/HeroSection'
-
-import { ProductContext } from './components/ProductContext'
+import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ProductsConatiner from "./components/ProductsConatiner";
+import HeroSection from "./components/HeroSection";
+import Cart from "./components/Cart";
+import { ProductContext } from "./components/ProductContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('/product.json')
+    fetch("/product.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -20,20 +21,37 @@ function App() {
         setProducts(data);
       })
       .catch((error) => {
-        console.error('Error fetching the product data:', error);
+        console.error("Error fetching the product data:", error);
       });
   }, []);
 
   return (
-    <>
-<Navbar/>
-<HeroSection/>
-<ProductContext.Provider value={products}>
-<ProductsConatiner/>
-</ProductContext.Provider>
-<Footer/>
-  </>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <ProductContext.Provider value={products}>
+                <ProductsConatiner />
+              </ProductContext.Provider>
+            </>
+          }
+        />
+        <Route
+          path="/cart"
+          element={
+            <>
+              <Cart />
+            </>
+          }
+        />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
