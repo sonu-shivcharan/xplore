@@ -8,10 +8,11 @@ const CartItemsCard = ({item}) => {
         <p>
           <b>{item.name}</b>
         </p>
+        <p>&#8377; {item.price}</p>
         <div className="quantity-input-container flex items-center">
-          <div>+</div>
-          <input type="number"></input>
-          <div>-</div>
+        <div className="decrement flex item-center">-</div>
+          <input type="text"></input>
+          <div className="increment">+</div>
         </div>
       </div>
     </div>

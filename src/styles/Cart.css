@@ -11,17 +11,44 @@
   max-width: 900px;
   width: 100%;
   padding: 1rem;
-  background-color: #fff;
   border-radius: 10px;
   margin: auto;
 }
-#cart-section .cart-item-card img {
-  max-width: 150px;
+#cart-section .cart-item-card{
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
 }
-#cart-section .quantity-input-container input {
-  width: 60px;
+#cart-section .cart-item-card img {
+  max-width: 100px;
+
+}
+.quantity-input-container input {
+  width: 40px;
+  text-align: center;
   font-size: 0.8rem;
   padding: 10px;
-  border-radius:7px;
   border: 1px solid #e3e3e3;
+  outline: none;
 }
+.quantity-input-container .increment, .decrement{
+  font-size:30px;
+  background-color: #0001;
+  padding: 0 10px;
+
+}
+.quantity-input-container {
+  border: 1px solid #0003;
+  border-radius: 5px;
+
+
+
+}
+.quantity-input-container .increment:hover{
+  color: aqua;
+}
+.quantity-input-container .decrement:hover{
+  color: aqua;
+}
+
