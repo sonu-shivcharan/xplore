@@ -2,7 +2,6 @@ import React from 'react'
 import CartItemsCard from './CartItemsCard';
 import '../styles/Cart.css'
 const Cart = ({cartItems}) => {
-  console.log(cartItems);
   return (
     <div id='cart-section' className='flex flex-col'>
       <div>

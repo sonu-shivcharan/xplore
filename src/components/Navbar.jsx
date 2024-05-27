@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ noOfItemsInCart }) => {
   const [icon, setIcon] = useState("menu");
-  const changeIconToArrow = () => {
-    setIcon("arrow_back");
+  const [currentRoute, setRoute] = useState("/");
+  const changeIconToArrow= () => {
+    setRoute("/cart");
   };
   const changeIconToMenu = () => {
-    setIcon("menu");
+    setRoute("/");
   };
   return (
     <nav id="navbar" className="flex justify-center">
@@ -16,15 +17,23 @@ const Navbar = () => {
             className="menu-icon material-symbols-rounded"
             onClick={changeIconToMenu}
           >
-            {icon}
+            {(currentRoute=="/")?"menu":"arrow_back"}
           </div>
         </Link>
         <h1>Looks Maxx</h1>
         <Link to="/cart">
           <div
-            onClick={changeIconToArrow}
             className="shopping-bag material-symbols-rounded"
+            onClick={changeIconToArrow}
           >
+            <div
+              className="no-of-items"
+              style={{
+                display: noOfItemsInCart > 0 ? "block" : "none",
+              }}
+            >
+              {noOfItemsInCart}
+            </div>
             local_mall
           </div>
         </Link>
