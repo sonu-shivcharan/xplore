@@ -9,6 +9,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
+  const [noOfItemsInCart, setNoOfItemsInCart] = useState(0);
+  useEffect(()=>{
+    setNoOfItemsInCart(cartItems.length)
+  }, [cartItems])
   useEffect(() => {
     fetch("/product.json")
       .then((res) => {
@@ -27,7 +31,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar noOfItemsInCart={noOfItemsInCart} />
       <Routes>
         <Route
           path="/"
@@ -44,7 +48,7 @@ function App() {
           path="/cart"
           element={
             <>
-              <Cart cartItems={cartItems} />
+              <Cart cartItems={cartItems}/>
             </>
           }
         />
