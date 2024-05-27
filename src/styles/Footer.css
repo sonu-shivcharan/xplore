@@ -1,0 +1,25 @@
+#footer{
+    width: 100%;
+   min-height: 200px;
+    background-color: rgb(39, 38, 38);
+    color: aliceblue;
+    font-size: px;
+}
+#footer div{
+    width: 200px;
+    padding: 1rem 1.6rem;
+}
+#footer div p{
+    font-size: 11px;
+    
+}
+#footer div h3{
+    font-size:15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#footer div ul{
+    font-size: 14px;
+    list-style-type: none;
+}
+
