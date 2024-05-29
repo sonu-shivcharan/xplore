@@ -24,7 +24,7 @@ const Footer = () => {
         <h3>Help</h3>
         <ul>
           <li><span className="material-symbols-rounded">call</span>:</li>
-          <li><span class="material-symbols-rounded">mail</span>support@looksmaxx.com</li>
+          <li><span className="material-symbols-rounded">mail</span>support@looksmaxx.com</li>
         </ul>
 
       </div>
