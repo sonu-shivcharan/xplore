@@ -54,3 +54,15 @@
   color: #000;
 }
 
+
+.subtotal-container{
+  background-color: #fff;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin:auto;
+  padding: 1rem;
+}
+.subtotal-container div{
+  padding: 0.4rem;
+}

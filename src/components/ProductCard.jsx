@@ -19,6 +19,7 @@ const ProductCard = React.memo(({ item }) => {
   }, [cartItems]);
 
   const handleAddToCart = (product) => {
+    product.quantity=1;
     const newCartItems = [...cartItems, product];
     setCartItems(newCartItems);
     localStorage.setItem("cartItems", JSON.stringify(newCartItems));

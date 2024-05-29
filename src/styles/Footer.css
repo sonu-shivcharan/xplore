@@ -1,32 +1,28 @@
-#footer{
-    width: 100%;
-   min-height: 200px;
-    background-color: rgb(39, 38, 38);
-    color: aliceblue;
-    font-size: px;
-    padding: 50px 0px  ;
+#footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(39, 38, 38);
+  color: aliceblue;
+  font-size: px;
+  padding: 50px 0px;
 }
-#footer *{
-    
 
+#footer div {
+  width: 250px;
+  padding: 1rem;
 }
-#footer div{
-    width: 250px;
-    padding: 1rem;
+#footer div p {
+  font-size: 11px;
 }
-#footer div p{
-    font-size: 11px;
-    
+#footer div h3 {
+  font-size: 15px;
+
+  margin-bottom: 5px;
 }
-#footer div h3{
-    font-size:15px;
-   
-    margin-bottom: 5px;
+#footer div ul {
+  font-size: 14px;
+  list-style-type: none;
 }
-#footer div ul{
-    font-size: 14px;
-    list-style-type: none;
-}
-#footer div ul span{
-    padding: 5px;
+#footer div ul span {
+  padding: 5px;
 }
