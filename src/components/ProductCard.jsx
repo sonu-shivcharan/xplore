@@ -1,28 +1,33 @@
-import React, { useState, useContext } from "react";
-import { ProductContext } from "./ProductContext";
-const ProductCard = ({ item }) => {
-  const { cartItems: prevCartItems, setCartItems } = useContext(ProductContext);
-  const initialStyle = {
-    backgroundColor: "#000",
-    color: "#fff",
-  };
-  const newStyle = {
-    backgroundColor: "#fff",
-    color: "#000",
-  };
-  const checkDoesExistInCart = (item) => {
-    let value = false;
-    if (prevCartItems.indexOf(item) > -1) {
-      value = true;
-    }
-    return value;
-  };
+import React, { useState, useContext, useMemo } from "react";
+import { CartContext } from "./CartContext";
+
+const initialStyle = {
+  backgroundColor: "#000",
+  color: "#fff",
+};
+
+const newStyle = {
+  backgroundColor: "#fff",
+  color: "#000",
+};
+
+const ProductCard = React.memo(({ item }) => {
+  const { cartItems, setCartItems } = useContext(CartContext);
+
+  const checkDoesExistInCart = useMemo(() => (item) => {
+    return cartItems.some(cartItem => cartItem.id === item.id);
+  }, [cartItems]);
 
   const handleAddToCart = (product) => {
-    const newCartItems = [...prevCartItems, product];
+    const newCartItems = [...cartItems, product];
     setCartItems(newCartItems);
+    localStorage.setItem("cartItems", JSON.stringify(newCartItems));
   };
+
   const doesAddedToCart = checkDoesExistInCart(item);
+
+  console.log("product rerendered");
+
   return (
     <div className="product-card">
       <div
@@ -30,8 +35,8 @@ const ProductCard = ({ item }) => {
         style={{ backgroundImage: `url(${item.img.url})` }}
       ></div>
       <div className="price-name-container flex justify-space-between">
-        <p>{item.name} </p>
-        <p> &#8377;{item.price}</p>
+        <p>{item.name}</p>
+        <p>&#8377;{item.price}</p>
       </div>
       <div
         className="add-to-cart-btn"
@@ -42,6 +47,6 @@ const ProductCard = ({ item }) => {
       </div>
     </div>
   );
-};
+});
 
-export default React.memo(ProductCard);
+export default ProductCard;

@@ -23,6 +23,7 @@ const Footer = () => {
       <div>
         <h3>Help</h3>
         <ul>
+
           <li className="flex  items-center">
             <span className="material-symbols-rounded">call</span> 9067702053
           </li>
@@ -30,6 +31,7 @@ const Footer = () => {
             <span class="material-symbols-rounded">mail</span>
             support@looksmaxx.com
           </li>
+
         </ul>
       </div>
     </footer>
