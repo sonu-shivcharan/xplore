@@ -4,7 +4,7 @@ import './../styles/Hero.css'
 const HeroSection = () => {
    
   return (
-    <div id='hero-section' className='flex-perfect-center'>
+    <div id='hero-section' className='flex'>
        <div className="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">

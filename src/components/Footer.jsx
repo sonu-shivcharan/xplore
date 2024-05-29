@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Footer.css";
 const Footer = () => {
   return (
-    <footer id="footer" className="flex justify-center flex-wrap" >
+    <footer id="footer" className="flex justify-center flex-wrap">
       <div className="who-are-we">
         <h3>Who are we?</h3>
         <p>
@@ -23,10 +23,16 @@ const Footer = () => {
       <div>
         <h3>Help</h3>
         <ul>
-          <li><span className="material-symbols-rounded">call</span>:</li>
-          <li><span className="material-symbols-rounded">mail</span>support@looksmaxx.com</li>
-        </ul>
 
+          <li className="flex  items-center">
+            <span className="material-symbols-rounded">call</span> 9067702053
+          </li>
+          <li className="flex  items-center">
+            <span class="material-symbols-rounded">mail</span>
+            support@looksmaxx.com
+          </li>
+
+        </ul>
       </div>
     </footer>
   );
