@@ -6,7 +6,7 @@ const Cart = ({cartItems}) => {
     <div id='cart-section' className='flex flex-col'>
       <div>
         <h3>Cart Items</h3>
-        <div className="items-container flex flex-col">
+        <div className="items-container flex flex-wrap justify-center">
           {
             cartItems.map((item)=><CartItemsCard item={item}/>)
           }

@@ -4,10 +4,15 @@
     background-color: rgb(39, 38, 38);
     color: aliceblue;
     font-size: px;
+    padding: 50px 0px  ;
+}
+#footer *{
+    
+
 }
 #footer div{
-    width: 200px;
-    padding: 1rem 1.6rem;
+    width: 250px;
+    padding: 1rem;
 }
 #footer div p{
     font-size: 11px;
@@ -15,11 +20,13 @@
 }
 #footer div h3{
     font-size:15px;
-    text-align: center;
+   
     margin-bottom: 5px;
 }
 #footer div ul{
     font-size: 14px;
     list-style-type: none;
 }
-
+#footer div ul span{
+    padding: 5px;
+}
